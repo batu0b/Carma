@@ -131,7 +131,7 @@ const Password = () => {
               </Text>
             </View>
             <NextButton
-              disabled={!approve || password?.length <= 7}
+              disabled={!approve || password?.length < 6}
               onPress={() => approvedUser()}
               backgroundColor={"white"}
               text="Tamamla"
