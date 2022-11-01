@@ -1,20 +1,25 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { SafeAreaView, StyleSheet, Text, View } from "react-native";
+import { AuthProvider } from "./src/Context/AuthContext";
+import { LoaderProvider } from "./src/Context/LoaderContext";
+import { RegisterProvider } from "./src/Context/RegContext";
+import Main from "./src/Routes";
+import CameraPages from "./src/Screens/CameraPages";
+import CardWelcomeSignIn from "./src/Screens/CardWelcomeSignIn";
+import DatePages from "./src/Screens/DatePages";
+import Password from "./src/Screens/Password";
+import Welcome from "./src/Screens/Welcome";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <LoaderProvider>
+      <AuthProvider>
+        <RegisterProvider>
+          <View style={{ flex: 1 }}>
+            <Main />
+          </View>
+        </RegisterProvider>
+      </AuthProvider>
+    </LoaderProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
