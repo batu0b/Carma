@@ -35,7 +35,6 @@ const BegenUsers = ({ item }) => {
           resizeMode="cover"
           imageStyle={{ borderRadius: 5 }}
           style={{
-            marginTop: 22.5 ,
             height: 180,
             alignItems: "flex-start",
             justifyContent: "flex-end",
@@ -83,7 +82,6 @@ const Begen = () => {
           currentUser.push({
             ...doc.data(),
           });
-
         });
         setUsers(currentUser);
         setLoader(false);
@@ -91,7 +89,7 @@ const Begen = () => {
   }, []);
 
   return (
-    <SafeAreaView style={{ flex: 1 }}>
+    <SafeAreaView style={{ flex: 1, paddingHorizontal: 15 }}>
       <View>
         {users && (
           <FlatList
@@ -99,6 +97,9 @@ const Begen = () => {
             columnWrapperStyle={{ justifyContent: "space-between" }}
             numColumns={2}
             renderItem={({ item }) => <BegenUsers item={item} />}
+            style={{
+              marginTop: 22.5,
+            }}
           />
         )}
       </View>
