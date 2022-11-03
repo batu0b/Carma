@@ -23,7 +23,7 @@ export const SpecialDatePicker = ({ onPress, value }) => {
   return (
     <View>
       <NextButton
-        backgroundColor='white'
+        backgroundColor='#ffffff'
         text={getTitle()}
         onPress={() => {
           setOpen(true);

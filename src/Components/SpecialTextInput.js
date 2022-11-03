@@ -13,15 +13,15 @@ const SpecialTextInput = ({
     <TextInput
       style={[
         {
-          backgroundColor: "white",
+          height: 50,
+          backgroundColor: "#ffffff",
           justifyContent: "center",
           paddingHorizontal: 10,
+          borderColor: "#957DC7",
+          borderWidth: 1,
           marginBottom: 10,
           borderRadius: 10,
           borderRadius: 10,
-          borderColor: "purple",
-          borderWidth: 1,
-          height: 50,
         },
         style,
       ]}

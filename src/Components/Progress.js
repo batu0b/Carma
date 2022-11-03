@@ -16,7 +16,7 @@ export default function Progress({ loaded }) {
         style={{
           height: "100%",
           width: loaded,
-          backgroundColor: "purple",
+          backgroundColor: "#844AFF",
           borderRadius: 9,
         }}
       />

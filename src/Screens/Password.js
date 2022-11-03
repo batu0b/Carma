@@ -60,7 +60,7 @@ const Password = () => {
   return (
     <>
       <SafeAreaView
-        style={{ flex: 1, backgroundColor: "white", paddingHorizontal: 15 }}
+        style={{ flex: 1, backgroundColor: "#ffffff", paddingHorizontal: 15 }}
       >
         <ScrollView>
           <Progress style={{}} loaded={"100%"} />
@@ -133,7 +133,7 @@ const Password = () => {
             <NextButton
               disabled={!approve || password?.length < 6}
               onPress={() => approvedUser()}
-              backgroundColor={"white"}
+              backgroundColor={"#ffffff"}
               text="Tamamla"
             />
           </View>

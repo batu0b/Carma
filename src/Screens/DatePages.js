@@ -57,7 +57,7 @@ const DatePages = () => {
                     setRegister({ ...register, birthday: myDate });
                 }
               }}
-              backgroundColor="white"
+              backgroundColor="#ffffff"
               disabled={birthday ? false : true}
               text={"Devam et"}
             />

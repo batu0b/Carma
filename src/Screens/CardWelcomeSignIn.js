@@ -59,7 +59,7 @@ const CardWelcomeSignIn = () => {
         </Text>
         <Text
           style={{
-            color: "white",
+            color: "#ffffff",
             textAlign: "center",
             fontWeight: "100",
             fontSize: 18,

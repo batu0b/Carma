@@ -53,7 +53,7 @@ const CameraPages = () => {
           <NextButton
             disabled={register.uri ? false : true}
             onPress={() => navigation.navigate("Password")}
-            backgroundColor="white"
+            backgroundColor="#ffffff"
             text="Devam Et"
             style={{ marginTop: 90 }}
           />

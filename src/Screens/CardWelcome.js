@@ -46,7 +46,7 @@ const CardWelcome = () => {
               {
                 textAlign: "center",
                 fontWeight: "200",
-                color: "white",
+                color: "#ffffff",
                 fontSize: 18,
               },
             ]}
@@ -67,7 +67,7 @@ const CardWelcome = () => {
                   navigation.navigate("DatePages");
                 }
               }}
-              backgroundColor="white"
+              backgroundColor="#ffffff"
               text={"Devam Et"}
               disabled={name?.length <= 4}
             />
